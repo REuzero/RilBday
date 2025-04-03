@@ -1,13 +1,13 @@
 window.addEventListener('load', () => {
     // SweetAlert untuk menanyakan apakah ingin memutar musik
     Swal.fire({
-        title: 'Do you want to play music in the background?',
+        title: 'Mau sembari dengerin musiknya?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Engga',
     }).then((result) => {
         if (result.isConfirmed) {
             // Memutar musik jika tombol Yes ditekan
@@ -27,7 +27,7 @@ document.getElementById('verificationName').addEventListener('submit', function(
     const errorMessage = document.getElementById('error-message');
 
     // Validasi nama
-    const validNames = ['nabila', 'Nabila', 'NABILA DEASY RAHMADHANY'];
+    const validNames = ['rilah', 'Rilah', 'RILAH SITI ROMLAH'];
 
     // Jika nama tidak valid, tampilkan pesan error
     if (!validNames.includes(nameInput)) {
@@ -41,8 +41,8 @@ document.getElementById('verificationName').addEventListener('submit', function(
     document.getElementById('step2').style.display = 'block';  // Tampilkan step 2
 });
 
-// Step 2: Verifikasi Pacar Faisal
-// Step 2: Verifikasi Pacar Faisal
+// Step 2: Verifikasi Sebagai
+// Step 2: Verifikasi Sebagai
 document.getElementById('verification').addEventListener('submit', function(e) {
     e.preventDefault();  // Mencegah form melakukan reload
 
@@ -51,7 +51,7 @@ document.getElementById('verification').addEventListener('submit', function(e) {
     // Jika jawabannya bukan 'yes', tampilkan pesan peringatan
     if (isPartner !== 'yes') {
         Swal.fire({
-            title: 'Bukan pacar Faisal!',
+            title: 'Bukan yang dikenal Fahrul!',
             text: 'Coba lagi dari awal.',
             icon: 'warning',
         }).then(() => {
@@ -66,7 +66,7 @@ document.getElementById('verification').addEventListener('submit', function(e) {
     // Jika valid, tampilkan SweetAlert sukses dan jalankan animasi
     Swal.fire({
         title: 'Verifikasi berhasil!',
-        text: 'Selamat menikmati animasi!',
+        text: 'Selamat merayakan!',
         icon: 'success',
     }).then(() => {
         // Sembunyikan form verifikasi setelah sukses
@@ -259,8 +259,8 @@ const animationTimeline = () => {
         "-=2"
     )
     .from(".hat", 0.5, {
-        x: -100,
-        y: 350,
+        x: 100,
+        y: 500,
         rotation: -180,
         opacity: 0,
     })
