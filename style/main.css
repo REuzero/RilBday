@@ -346,7 +346,8 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
+    top: -155px;
+    left: 165px;
     width: 50px;
   }
 
